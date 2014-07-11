@@ -15,7 +15,7 @@ typedef struct
 	
 } VertexData;
 
-#define SQUARE_SIZE	80
+#define SQUARE_SIZE	100
 
 VertexData vertices[] =
 {
@@ -59,32 +59,30 @@ VertexData vertices[] =
 	glEnableVertexAttribArray(GLKVertexAttribPosition);
 	glVertexAttribPointer(GLKVertexAttribPosition,3, GL_FLOAT, GL_FALSE,sizeof(VertexData),offsetof(VertexData, positionCoordinates));
 	
-	
-	
-	CGImageRef imageReference = [[UIImage imageNamed:@"IconSmall.png"] CGImage];
-	
-	GLKTextureInfo* textureInfo = [GLKTextureLoader textureWithCGImage:imageReference options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:GLKTextureLoaderOriginBottomLeft] error:NULL];
-	self.baseEffect.texture2d0.name = textureInfo.name;
-	self.baseEffect.texture2d0.target = textureInfo.target;
-	
 	glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
 	glVertexAttribPointer(GLKVertexAttribTexCoord0, 2, GL_FLOAT, GL_FALSE, sizeof(VertexData), (GLvoid*)offsetof(VertexData, textureCoordinates));
 	
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	
+	CGImageRef imageReference = [[UIImage imageNamed:@"rocket_small.png"] CGImage];
+	
+	GLKTextureInfo* textureInfo = [GLKTextureLoader textureWithCGImage:imageReference options:[NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:GLKTextureLoaderOriginBottomLeft] error:NULL];
+
+	self.rocket = [[Sprite alloc] initWithEffect:self.baseEffect];
+	self.rocket.textureInfo = textureInfo;
+	self.rocket.position = GLKVector2Make(400, 200);
+	self.rocket.rotation = 360;
 }
 
 - (void) glkView:(GLKView *)view drawInRect:(CGRect)rect
 {
-	glClear(GL_COLOR_BUFFER_BIT);
-	[self.baseEffect prepareToDraw];
-	
-	glDrawArrays(GL_TRIANGLES, 0, 6);
+	[self.rocket render];
 }
 
 - (void) update
 {
-	glClear(GL_COLOR_BUFFER_BIT);
+	[self.rocket update];
 }
 
 - (void)didReceiveMemoryWarning

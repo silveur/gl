@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
+#import "Sprite.h"
 
 @interface ViewController : GLKViewController
 
 @property (nonatomic, strong) EAGLContext* context;
 @property (nonatomic, strong) GLKBaseEffect* baseEffect;
+@property (nonatomic, strong) Sprite* rocket;
 
 @end

@@ -17,8 +17,6 @@
 		54ABEBE4196D90C6002A3479 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54ABEBE3196D90C6002A3479 /* AppDelegate.m */; };
 		54ABEBE7196D90C6002A3479 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54ABEBE5196D90C6002A3479 /* Main_iPhone.storyboard */; };
 		54ABEBEA196D90C6002A3479 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54ABEBE8196D90C6002A3479 /* Main_iPad.storyboard */; };
-		54ABEBEC196D90C6002A3479 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 54ABEBEB196D90C6002A3479 /* Shader.fsh */; };
-		54ABEBEE196D90C6002A3479 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 54ABEBED196D90C6002A3479 /* Shader.vsh */; };
 		54ABEBF1196D90C6002A3479 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54ABEBF0196D90C6002A3479 /* ViewController.m */; };
 		54ABEBF3196D90C6002A3479 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54ABEBF2196D90C6002A3479 /* Images.xcassets */; };
 		54ABEBFA196D90C6002A3479 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABEBF9196D90C6002A3479 /* XCTest.framework */; };
@@ -53,8 +51,6 @@
 		54ABEBE3196D90C6002A3479 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		54ABEBE6196D90C6002A3479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		54ABEBE9196D90C6002A3479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		54ABEBEB196D90C6002A3479 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		54ABEBED196D90C6002A3479 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		54ABEBEF196D90C6002A3479 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		54ABEBF0196D90C6002A3479 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		54ABEBF2196D90C6002A3479 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -130,8 +126,6 @@
 				54ABEBE3196D90C6002A3479 /* AppDelegate.m */,
 				54ABEBE5196D90C6002A3479 /* Main_iPhone.storyboard */,
 				54ABEBE8196D90C6002A3479 /* Main_iPad.storyboard */,
-				54ABEBEB196D90C6002A3479 /* Shader.fsh */,
-				54ABEBED196D90C6002A3479 /* Shader.vsh */,
 				54ABEBEF196D90C6002A3479 /* ViewController.h */,
 				54ABEBF0196D90C6002A3479 /* ViewController.m */,
 				54ABEBF2196D90C6002A3479 /* Images.xcassets */,
@@ -245,12 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54ABEBEC196D90C6002A3479 /* Shader.fsh in Resources */,
 				54ABEBEA196D90C6002A3479 /* Main_iPad.storyboard in Resources */,
 				54ABEBE7196D90C6002A3479 /* Main_iPhone.storyboard in Resources */,
 				54ABEBF3196D90C6002A3479 /* Images.xcassets in Resources */,
 				54ABEBDE196D90C6002A3479 /* InfoPlist.strings in Resources */,
-				54ABEBEE196D90C6002A3479 /* Shader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +478,7 @@
 				54ABEC0B196D90C6002A3479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54ABEC0C196D90C6002A3479 /* Build configuration list for PBXNativeTarget "glTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +487,7 @@
 				54ABEC0E196D90C6002A3479 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

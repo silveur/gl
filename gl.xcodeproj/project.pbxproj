@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54037BF9196FF47900F8F4DE /* IconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 54037BF8196FF47900F8F4DE /* IconSmall.png */; };
 		54ABEBD0196D90C6002A3479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABEBCF196D90C6002A3479 /* Foundation.framework */; };
 		54ABEBD2196D90C6002A3479 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABEBD1196D90C6002A3479 /* CoreGraphics.framework */; };
 		54ABEBD4196D90C6002A3479 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABEBD3196D90C6002A3479 /* UIKit.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54037BF8196FF47900F8F4DE /* IconSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconSmall.png; sourceTree = "<group>"; };
 		54ABEBCC196D90C6002A3479 /* gl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54ABEBCF196D90C6002A3479 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54ABEBD1196D90C6002A3479 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +124,7 @@
 		54ABEBD9196D90C6002A3479 /* gl */ = {
 			isa = PBXGroup;
 			children = (
+				54037BF8196FF47900F8F4DE /* IconSmall.png */,
 				54ABEBE2196D90C6002A3479 /* AppDelegate.h */,
 				54ABEBE3196D90C6002A3479 /* AppDelegate.m */,
 				54ABEBE5196D90C6002A3479 /* Main_iPhone.storyboard */,
@@ -242,6 +245,7 @@
 				54ABEBEA196D90C6002A3479 /* Main_iPad.storyboard in Resources */,
 				54ABEBE7196D90C6002A3479 /* Main_iPhone.storyboard in Resources */,
 				54ABEBF3196D90C6002A3479 /* Images.xcassets in Resources */,
+				54037BF9196FF47900F8F4DE /* IconSmall.png in Resources */,
 				54ABEBDE196D90C6002A3479 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

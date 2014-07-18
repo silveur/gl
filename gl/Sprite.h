@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 
+#define SQUARE_SIZE	100.0f
+
 @interface Sprite : NSObject
 
 - (id) initWithEffect:(GLKBaseEffect*)baseEffect;
@@ -19,5 +21,7 @@
 @property (nonatomic, strong) GLKTextureInfo* textureInfo;
 @property (assign) GLKVector2 position;
 @property (assign) float rotation;
+@property (assign) float rotationVelocity;
+@property (assign) GLKVector2 velocity;
 
 @end

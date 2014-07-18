@@ -10,6 +10,8 @@
 		54037BF9196FF47900F8F4DE /* IconSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 54037BF8196FF47900F8F4DE /* IconSmall.png */; };
 		54037BFD196FFF6A00F8F4DE /* Sprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 54037BFC196FFF6A00F8F4DE /* Sprite.m */; };
 		54037BFF1970247400F8F4DE /* rocket_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 54037BFE1970247400F8F4DE /* rocket_small.png */; };
+		54037C0119702F4500F8F4DE /* bullet.gif in Resources */ = {isa = PBXBuildFile; fileRef = 54037C0019702F4500F8F4DE /* bullet.gif */; };
+		54037C03197431BC00F8F4DE /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 54037C02197431BC00F8F4DE /* rock.png */; };
 		54ABEBD0196D90C6002A3479 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABEBCF196D90C6002A3479 /* Foundation.framework */; };
 		54ABEBD2196D90C6002A3479 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABEBD1196D90C6002A3479 /* CoreGraphics.framework */; };
 		54ABEBD4196D90C6002A3479 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54ABEBD3196D90C6002A3479 /* UIKit.framework */; };
@@ -44,6 +46,8 @@
 		54037BFB196FFF6A00F8F4DE /* Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sprite.h; sourceTree = "<group>"; };
 		54037BFC196FFF6A00F8F4DE /* Sprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sprite.m; sourceTree = "<group>"; };
 		54037BFE1970247400F8F4DE /* rocket_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rocket_small.png; sourceTree = "<group>"; };
+		54037C0019702F4500F8F4DE /* bullet.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bullet.gif; sourceTree = "<group>"; };
+		54037C02197431BC00F8F4DE /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
 		54ABEBCC196D90C6002A3479 /* gl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54ABEBCF196D90C6002A3479 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		54ABEBD1196D90C6002A3479 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,7 +101,9 @@
 		54037BFA196FFF3300F8F4DE /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				54037C02197431BC00F8F4DE /* rock.png */,
 				54037BFE1970247400F8F4DE /* rocket_small.png */,
+				54037C0019702F4500F8F4DE /* bullet.gif */,
 			);
 			name = Ressources;
 			sourceTree = "<group>";
@@ -260,8 +266,10 @@
 			files = (
 				54ABEBEA196D90C6002A3479 /* Main_iPad.storyboard in Resources */,
 				54ABEBE7196D90C6002A3479 /* Main_iPhone.storyboard in Resources */,
+				54037C03197431BC00F8F4DE /* rock.png in Resources */,
 				54ABEBF3196D90C6002A3479 /* Images.xcassets in Resources */,
 				54037BF9196FF47900F8F4DE /* IconSmall.png in Resources */,
+				54037C0119702F4500F8F4DE /* bullet.gif in Resources */,
 				54ABEBDE196D90C6002A3479 /* InfoPlist.strings in Resources */,
 				54037BFF1970247400F8F4DE /* rocket_small.png in Resources */,
 			);

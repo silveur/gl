@@ -21,15 +21,14 @@
 	if(self = [super init])
 	{
 		self.baseEffect = baseEffect;
+		self.rotation = 0;
 	}
 	
 	return self;
 }
 
 - (void)render
-{
-	glClear(GL_COLOR_BUFFER_BIT);
-	
+{	
 	self.baseEffect.texture2d0.name = self.textureInfo.name;
 	self.baseEffect.texture2d0.target = self.textureInfo.target;
 
@@ -47,7 +46,8 @@
 
 -(void)update
 {
-	
+	self.position = GLKVector2Add(self.position, self.velocity);
+	self.rotation += self.rotationVelocity;
 }
 
 
